@@ -1,21 +1,11 @@
-<br /><br />
-<div class="bg.jpg">
-  <div class="col-10 offset-1">
-	<h1>I say!</h1>
-</div>
-<br />
-<div class="col-10 offset-1">
-	<h2>Did you hit a wrong key?</h2>
-</div>
-<br />
-<div class="col-10 offset-1">
-	<h3>Or did you intend to fall...</h3>
-</div>
-<br/>
-<div class="col-10 offset-1">
-	<h4>... down this portal...</h4>
-</div>
-<br />
-<div class="col-10 offset-1">
-	<h5>...to the past.</h5>
-</div>
+
+
+<% @titles.each do |place| %>
+  <div>
+    <h1><%= title.name %></h1><br />
+    <i><%= title.author %></i><br />
+    <p><%= title.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
